@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+ <link rel="shortcut icon" href="./img/Vector.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <main class="container">
+        <section class="section_1">
+            <div class="principal">
+
+                <img src="./img/Vector.png" class="imagen_logo" alt="logo">
+                <textarea class="caja_texto" placeholder="Ingrese el texto aqui" id="cajatxt" ></textarea>
+    
+            </div>
+            
+            <div class="botones_conteiner">
+
+               <div class="mensaje_error">
+                <img src="./img/message-square-error-solid-24.png" class="alerta" alt="error">
+                <span>Solo letras minusculas y sin acento</span>
+               </div> 
+               <div class="botones_caja">
+                <input type="button" class="btn_encriptar" value="Encriptar" id="btnencriptar" onclick="encriptar ()">
+                <input type="button" class="btn_desencriptar" value="Desencriptar" id="btndesencriptar" onclick="desencriptar ()">
+
+               </div>
+                
+            </div>
+        </section>
+
+        <section class="section_2" >
+            <div class="muneco">
+                <input type="text" class="resultado" id="cajaresultado" >
+                <img src="./img/Muñeco.png" class="imagen_muneco" alt="muñeco" id="muneco1">
+            </div>
+            
+           <div class="paragrah">
+            <p class="parrafo_1" id="parrafo">Ningún mensaje fue <br>encontrado</p>
+            <p class="parrafo_2">Intruduce el texto que desees encriptar o<br>desencriptar.</p>
+            
+           </div> 
+        </section>
+       
+    </main>
+  
+</body>
+</html>
